@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+@font-face{
+    font-family: fonte;
+    src: url(fonte/aesthetic_romance/Aesthetic\ Romance.ttf);
+}
+
+body{
+    margin: 0;
+    background-color: rgb(235, 166, 75);
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    background-image: url(https://cdn.pixabay.com/photo/2022/08/25/04/30/waves-7409254_1280.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    
+}
+
+h1{
+text-align: center;
+font-size: 40px;
+color: rgb(192, 180, 180);
+font-family: fonte;
+}
+
+.container{
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0px auto;
+    perspective: 900px;
+}
+
+.carrossel{
+position: absolute;
+width: 100%;
+height: 100%;
+transform-style: preserve-3d;
+animation: rotate360 40s infinite forwards;
+}
+
+.imagem{
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    width: 290px;
+    height: 187px;
+    background-size: cover;
+    border-radius: 5px;
+    display: flex;
+}
+
+.imagem span{
+    font-size: 1.2em;
+    /* margin: 1%; */
+    text-align: center;
+    margin-left: 50%;
+}
+
+@keyframes rotate360 {
+    
+    from{
+     transform: rotateY(0deg);
+    }
+
+    to{
+      transform: rotateY(360deg);
+    }
+}
+
+
+.imagem:nth-child(1){
+    background-image: url(https://musicainstantanea.com.br/wp-content/uploads/2022/11/BK-Icarus.jpeg);
+    transform: rotateY(0deg) translateZ(430px);
+}
+
+.imagem:nth-child(2){
+    background-image: url(https://i.scdn.co/image/ab67616d0000b273497e68476e7062b1bf5ea83f);
+    transform: rotateY(40deg) translateZ(430px);
+}
+
+.imagem:nth-child(3){
+background-image: url(https://i.pinimg.com/736x/94/c7/fe/94c7fe521f790afb6bbcb5027faee975.jpg);
+transform: rotateY(80deg) translateZ(430px);
+}
+
+.imagem:nth-child(4){
+    background-image: url(https://i.scdn.co/image/ab67616d0000b273363821552f65adc2ad9f453d);
+    transform: rotateY(120deg) translateZ(430px);
+}
+
+.imagem:nth-child(5){
+    background-image: url(https://akamai.sscdn.co/letras/360x360/albuns/8/3/6/e/1140441630324869.jpg);
+    transform: rotateY(160deg) translateZ(430px);
+}
+
+.imagem:nth-child(6){
+    background-image: url(https://coverartarchive.org/release/6f6427e2-5a34-47ce-a7b4-37fb3d7b6e3b/24471046783-250.jpg);
+    transform: rotateY(200deg) translateZ(430px);
+}
+
+.imagem:nth-child(7){
+    background-image: url(https://upload.wikimedia.org/wikipedia/pt/9/96/Samba_esquema_novo.jpg);
+    transform: rotateY(240deg) translateZ(430px);
+}
+
+.imagem:nth-child(8){
+    background-image: url(https://i.scdn.co/image/ab67616d0000b273c5ba65ef4043539374a3de16);
+    transform: rotateY(280deg) translateZ(430px);
+}
+
+.imagem:nth-child(9){
+    background-image: url(https://upload.wikimedia.org/wikipedia/pt/7/7c/Contra_N%C3%B3s_Ningu%C3%A9m_Ser%C3%A1.jpg);
+    transform: rotateY(320deg) translateZ(430px);
+}
+
+footer{
+    position: absolute;
+    bottom: 0%;
+    text-align: center;
+    width: 50%;
+    color: rgb(161, 167, 168);
+    height: 1.5em;
+    font-size: 20px;
+}
